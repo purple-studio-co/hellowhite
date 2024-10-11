@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WHITE - IT Продукты</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-black font-sans leading-normal tracking-normal">
+    <!-- Хедер -->
+    <header class="bg-white border-b border-black">
+      <div
+        class="container mx-auto flex justify-between items-center py-4 px-6"
+      >
+        <div>
+          <img src="hellowhite.svg" alt="WHITE Logo" class="h-10" />
+        </div>
+        <nav>
+          <a href="#services" class="text-black hover:underline mx-2">Услуги</a>
+          <a href="#projects" class="text-black hover:underline mx-2"
+            >Проекты</a
+          >
+          <a href="#contact" class="text-black hover:underline mx-2"
+            >Контакты</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <!-- Главный блок -->
+    <section class="bg-white">
+      <div
+        class="container mx-auto flex flex-col md:flex-row items-center py-16 px-6"
+      >
+        <div class="md:w-1/2">
+          <h1 class="text-5xl font-bold text-black mb-6">
+            Создаем IT продукты, короче меняют мир к лучшему
+          </h1>
+          <p class="text-black mb-8">
+            Мы — команда экспертов в области разработки, дизайна и маркетинга.
+            Специализируемся на создании сайтов и приложений, их поддержке и
+            продвижении.
+          </p>
+          <div>
+            <a
+              href="mailto:info@white.com"
+              class="bg-black text-white px-6 py-3 rounded mr-2 hover:bg-gray-900"
+              >Запросить</a
+            >
+            <a
+              href="mailto:contact@white.com"
+              class="border border-black text-black px-6 py-3 rounded hover:bg-gray-100"
+              >Связаться</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Услуги -->
+    <section id="services" class="bg-white py-16 px-6">
+      <div class="container mx-auto">
+        <h2 class="text-4xl font-bold text-black mb-12 text-center">
+          Наши услуги
+        </h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Разработка сайтов -->
+          <div class="bg-white border border-black p-8 rounded">
+            <h3 class="text-2xl font-semibold text-black mb-4">
+              Разработка сайтов
+            </h3>
+            <p class="text-black mb-4">
+              Мы разрабатываем сайты любой сложности, от одностраничных сайтов
+              до многофункциональных платформ. Все наши сайты адаптированы для
+              различных устройств и поддерживают современные веб-стандарты.
+            </p>
+            <h4 class="font-semibold text-black mb-2">Технологический стек:</h4>
+            <ul class="list-disc list-inside text-black">
+              <li>HTML5, CSS3, JavaScript</li>
+              <li>React, Vue.js, Angular</li>
+              <li>Node.js, PHP, Python</li>
+            </ul>
+          </div>
+          <!-- Разработка мобильных приложений -->
+          <div class="bg-white border border-black p-8 rounded">
+            <h3 class="text-2xl font-semibold text-black mb-4">
+              Разработка мобильных приложений
+            </h3>
+            <p class="text-black mb-4">
+              Разработка iOS и Android приложений с учётом современных подходов.
+              Помогаем с публикацией приложений в App Store и Google Play.
+            </p>
+            <h4 class="font-semibold text-black mb-2">Технологический стек:</h4>
+            <ul class="list-disc list-inside text-black">
+              <li>Swift, Objective-C</li>
+              <li>Kotlin, Java</li>
+              <li>React Native, Flutter</li>
+            </ul>
+          </div>
+          <!-- Решения на базе искусственного интеллекта -->
+          <div class="bg-white border border-black p-8 rounded">
+            <h3 class="text-2xl font-semibold text-black mb-4">
+              Решения на базе ИИ
+            </h3>
+            <p class="text-black mb-4">
+              Мы создаем и внедряем решения на основе ИИ для анализа данных,
+              создания контента и улучшения взаимодействия с пользователями.
+            </p>
+          </div>
+          <!-- Продвижение digital продуктов -->
+          <div class="bg-white border border-black p-8 rounded">
+            <h3 class="text-2xl font-semibold text-black mb-4">
+              Продвижение digital продуктов
+            </h3>
+            <p class="text-black mb-4">
+              Комплексное продвижение, включающее создание рекламных кабинетов,
+              настройку и запуск рекламных кампаний, а также создание креативов.
+            </p>
+          </div>
+          <!-- Техническая поддержка -->
+          <div class="bg-white border border-black p-8 rounded">
+            <h3 class="text-2xl font-semibold text-black mb-4">
+              Техническая поддержка
+            </h3>
+            <p class="text-black mb-4">
+              Обеспечиваем постоянное обслуживание продуктов, включая регулярные
+              обновления, мониторинг производительности и защиту от угроз.
+            </p>
+          </div>
+          <!-- Дизайн интерфейсов -->
+          <div class="bg-white border border-black p-8 rounded">
+            <h3 class="text-2xl font-semibold text-black mb-4">
+              Дизайн интерфейсов
+            </h3>
+            <p class="text-black mb-4">
+              Проводим UX исследования, создаем интуитивно понятные и красивые
+              интерфейсы и визуальные гайдлайны.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Проекты -->
+    <section id="projects" class="bg-white py-16 px-6">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold text-black mb-8">Проекты</h2>
+        <p class="text-black mb-8">
+          Портфолио реализованных проектов предоставляем по запросу
+        </p>
+        <a
+          href="mailto:portfolio@white.com"
+          class="bg-black text-white px-6 py-3 rounded hover:bg-gray-900"
+          >Запросить портфолио</a
+        >
+      </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="bg-white py-16 px-6">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold text-black mb-6">Обсудить проект</h2>
+        <p class="text-black mb-8">
+          Свяжитесь с нами для обсуждения проекта и расценок стоимости:
+        </p>
+        <a
+          href="mailto:contact@white.com"
+          class="border border-black text-black px-6 py-3 rounded hover:bg-gray-100"
+          >Связаться</a
+        >
+      </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="bg-white border-t border-black py-6 px-6">
+      <div class="container mx-auto text-center text-black text-sm">
+        <p>Общество с ограниченной ответственностью «Уайт»</p>
+        <p>123112, город Москва, Пресненская наб, д. 12</p>
+        <p>ОГРН: 1217700083810 | ИНН: 9703027852 | КПП: 770301001</p>
+      </div>
+    </footer>
+  </body>
+</html>
