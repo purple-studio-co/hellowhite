@@ -153,16 +153,20 @@
         <h2 class="text-4xl font-bold text-black mb-8">Проекты</h2>
         <p class="text-black mb-2">Ньюми – AI-ассистент для блогеров</p>
         <div class="flex flex-col lg:flex-row justify-around gap-4">
-          <img
-            src="img/newme1.png"
-            alt="Ньюми скриншот 1"
-            class="rounded max-w-lg border border-b p-5 m-5"
-          />
-          <img
-            src="img/newme2.png"
-            alt="Ньюми скриншот 2"
-            class="rounded max-w-lg border border-b p-5 m-5"
-          />
+          <div class="img-container rounded max-w-lg border border-b p-5 m-5">
+            <img
+              src="img/newme1.png"
+              alt="Ньюми скриншот 1"
+              class="image"
+            />
+          </div>
+          <div class="img-container rounded max-w-lg border border-b p-5 m-5">
+            <img
+              src="img/newme2.png"
+              alt="Ньюми скриншот 2"
+              class="image"
+            />
+          </div>
         </div>
         <p class="text-black mb-8 mt-8">
           Портфолио реализованных проектов предоставляем по запросу
@@ -170,9 +174,23 @@
         <a
           href="mailto:contact@hellowhite.ru"
           class="bg-black text-white px-6 py-3 rounded hover:bg-gray-900"
-          >Запросить портфолио</a
-        >
-      </div>
+        >Запросить портфолио</a>
+
+        <style>
+          .img-container {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .image {
+            max-width: 100%;
+            height: auto;
+            object-fit: contain; /* or use 'cover' depending on the effect you want */
+          }
+        </style>
     </section>
 
     <!-- Стоимость -->
@@ -190,21 +208,23 @@
     <section id="reviews" class="bg-white py-16 px-6">
       <div class="container mx-auto text-center">
         <h2 class="text-4xl font-bold text-black mb-6">Отзывы</h2>
-        <div class="mb-6">
+        <div class="my-10">
           <p class="italic text-black mb-4">
             Отличное понимание бизнес-целей клиента. От первого общения до
             финального продукта — безупречный процесс.
           </p>
           <p class="text-black font-semibold">Директор по продукту, Ньюми</p>
         </div>
-        <div class="mb-6">
+        <hr class="my-12"/>
+        <div class="my-10">
           <p class="italic text-black mb-4">
             Впечатлен тем, как команда воплотила в жизнь наши идеи и предложила
             решения, о которых мы даже не задумывались.
           </p>
           <p class="text-black font-semibold">Маркетинг директор, IT стартап</p>
         </div>
-        <div class="mb-6">
+        <hr class="my-12"/>
+        <div class="my-10">
           <p class="italic text-black mb-4">
             Редко встретишь такую синергию креатива и техническоcти. Сайт
             полностью отражает суть нашего бренда.
